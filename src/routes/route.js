@@ -12,13 +12,13 @@ router.get("/test-me", function (req, res) {
 
 
 
-router.post("/createBook", BookController.createBook  )
+//router.post("/createBook",commonMW.mid5, BookController.createBook  )
 
 
 
 
 // router.post("/createUser", UserController.createUser  )
-// router.get("/getUsersData", UserController.getUsersData)
+//router.get("/getUsersData", UserController.getUsersData)
 
 
 // const mid1= function ( req, res, next) {
@@ -48,7 +48,7 @@ router.post("/createBook", BookController.createBook  )
 
 
 
-router.get("/basicRoute", commonMW.mid1, commonMW.mid2, commonMW.mid3, commonMW.mid4, UserController.basicCode)
+router.get("/basicRoute", commonMW.mid5, UserController.basicCode)
 
 
 
